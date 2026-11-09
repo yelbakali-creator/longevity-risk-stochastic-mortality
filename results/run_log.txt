@@ -1,0 +1,26 @@
+Lee-Carter Poisson converged in 7 iterations; max score gap 5.1e-10
+
+Model comparison
+                   model  log_likelihood  parameters     BIC
+Lee-Carter (Poisson MLE)        -15163.8         119 31218.5
+        Lee-Carter (SVD)        -15637.7         119     NaN
+       CBD (Poisson MLE)        -17621.1         102 36005.8
+
+Backtest 1997-2011
+model  coverage_95  share_below_lower_band  mean_log_error  rmse_log
+   LC        0.581                   0.415          -0.132     0.167
+  CBD        0.709                   0.291          -0.137     0.164
+
+Projections
+                                     0        1
+model                               LC      CBD
+period_e65_2011                18.2476  18.2476
+cohort_e65_mean                19.7379  20.3486
+cohort_e65_p0_5                18.3923  17.6413
+cohort_e65_p99_5               21.0786  23.9844
+annuity_mean                   15.3142   15.612
+annuity_p99_5                    16.19  17.7021
+stochastic_runoff_capital_pct   0.0572   0.1339
+sf_20pct_shock_capital_pct      0.0751   0.0812
+swap_premium_coc_6pct           0.0368   0.0901
+swap_premium_coc_4_75pct        0.0291   0.0713
