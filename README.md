@@ -43,7 +43,7 @@ Both models, calibrated on 1961-1996, **under-predicted the improvement of the 2
 Both models are fitted under the same Poisson likelihood for deaths (for CBD, m = -log(1 - q)), so their likelihoods and BIC are directly comparable.
 
 - **Lee-Carter fits better in-sample** on ages 55-89, and Poisson maximum likelihood clearly beats the original SVD fit.
-- **CBD wins out of sample.** Its two period factors let the level and the age slope of mortality move independently: kappa2 rises over time, so improvement has been faster at younger pension ages than at the oldest ages. Lee-Carter's single factor forces all ages to move together, which **understates uncertainty**. This is why its capital (5.7%) is less than half of CBD's (13.4%).
+- **CBD is more robust out of sample.** Its central forecast is no more accurate than Lee-Carter's (similar mean errors), but its uncertainty bands covered reality much better (71% vs 58%). Its two period factors let the level and the age slope of mortality move independently: kappa2 rises over time, so improvement has been faster at younger pension ages than at the oldest ages. Lee-Carter's single factor forces all ages to move together, which **understates uncertainty**. This is why its capital (5.7%) is less than half of CBD's (13.4%).
 
 **Numerical check.** At the Poisson maximum likelihood, the score equation for a(x) implies that fitted deaths equal observed deaths for every age. The fit satisfies this to a relative precision of 5e-10.
 
