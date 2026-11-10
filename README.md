@@ -1,5 +1,7 @@
 # Longevity Risk with Stochastic Mortality Models: Lee-Carter vs Cairns-Blake-Dowd
 
+[![tests](https://github.com/yelbakali-creator/longevity-risk-stochastic-mortality/actions/workflows/tests.yml/badge.svg)](https://github.com/yelbakali-creator/longevity-risk-stochastic-mortality/actions/workflows/tests.yml)
+
 A from-scratch Python study of longevity risk on real data (England & Wales males, ages 55-89, 1961-2011, Human Mortality Database):
 
 1. **Two stochastic mortality models**, fitted by Poisson maximum likelihood: Lee-Carter (Brouhns, Denuit & Vermunt, 2002) and Cairns-Blake-Dowd (2006).
@@ -98,6 +100,7 @@ The standard formula (7.5-8.1%) sits between the two models' stochastic results.
 
 ```bash
 pip install -r requirements.txt
+python -m pytest       # 4 automated validation tests
 python run_study.py
 ```
 
